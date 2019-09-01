@@ -1,3 +1,11 @@
+'''
+The robot has three ultrasonic distance sensors. The functions distanceLeft, 
+distanceAhead and distanceRight give the distances from each of the three sensors. 
+The direction functions are set for a given timeframe by the input 'tf'. The forward 
+function doesn't have a timeframe input as the robot is constantly moving forward 
+and makes adjustments based on the inputs from the distance sensors.
+'''
+
 import RPi.GPIO as gpio
 import time
 import random
@@ -129,27 +137,16 @@ def distRight():
     return distance
 
 
-def randomDirection(move_time):
-    right = turn_right(move_time)
-    left = turn_left(move_time)
-    directions = [right, left]
-
-    for direction in directions:
-        x = random.randint(0, 1)
-        go_direction = directions[x]
-
-    return go_direction
-
-
 try:	
     while True:
         dist_ahead = distanceAhead()
         dist_left = distanceLeft()
         dist_right = distRight()
+        stop_dist = 7
         stop_time = 1
         move_time = 2
 
-        if dist_ahead < 7:
+        if dist_ahead < stop_dist:
             print('Redirecting...')
             stop(stop_time)
             print('Finding best route...')
@@ -160,14 +157,14 @@ try:
             elif dist_right < dist_left:
                 print('Turning left...')
                 turn_left(move_time)
-        elif dist_left < 7:
+        elif dist_left < stop_dist:
             print('Redirecting...')
             stop(stop_time)
             print('Redirecting...')
             reverse(move_time)
             print('Turning right...')
             turn_right(move_time)
-        elif dist_right < 7:
+        elif dist_right < stop_dist:
             print('Redirecting...')
             stop(stop_time)
             print('Redirecting...')
