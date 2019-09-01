@@ -8,7 +8,7 @@ HC-SR04 ultrasonic distance sensors
 Raspberry pi camera module  
 DC motors and wheels  
 
-### Installing opencv
+## Installing opencv
 Installing opencv on the Raspberry Pi can be kind of awkward and can take several hours as it requires building to install ALL of the relevant dependencies. Here is an easier way outlined by Michael Ratcliffe from Hackaday (https://hackaday.io/project/7008-fly-wars-a-hackers-solution-to-world-hunger/log/23068-installing-opencv-on-a-raspberry-pi-the-easy-way):
 ```shell
 sudo apt-get update
