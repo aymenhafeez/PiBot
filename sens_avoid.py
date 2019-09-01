@@ -1,11 +1,3 @@
-'''
-The robot has three ultrasonic distance sensors. The functions distanceLeft, 
-distanceAhead and distanceRight give the distances from each of the three sensors. 
-The direction functions are set for a given timeframe by the input 'tf'. The forward 
-function doesn't have a timeframe input as the robot is constantly moving forward 
-and makes adjustments based on the inputs from the distance sensors.
-'''
-
 import RPi.GPIO as gpio
 import time
 import random
