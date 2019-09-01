@@ -39,21 +39,21 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
 
     threshold = 6
 
-    if(theta > threshold):
+    if theta > threshold:
         gpio.output(7, True)
         gpio.output(11, False)
         gpio.output(13, True)
         gpio.output(15, False)
         print('left')
 
-    if(theta < -threshold):
+    if theta < -threshold:
         gpio.output(7, False)
         gpio.output(11, True)
         gpio.output(13, False)
         gpio.output(15, True)
         print('right')
 
-    if(abs(theta) < threshold):
+    if abs(theta) < threshold:
         gpio.output(7, True)
         gpio.output(11, False)
         gpio.output(13, False)
