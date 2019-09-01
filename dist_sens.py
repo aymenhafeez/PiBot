@@ -1,9 +1,12 @@
+'''Testing the ultrasonic distance sensor'''
+
 import RPi.GPIO as gpio 
 import time
 
 gpio.setmode(gpio.BOARD)
 gpio.setwarnings(False)
 
+# Setting the TRIG and ECHO pins as variables to the corresponding GPIO pins.
 TRIG = 18
 ECHO = 12  
 
@@ -14,13 +17,13 @@ gpio.output(TRIG, True)
 time.sleep(0.0001)
 gpio.output(TRIG, False)
 
-while gpio.input(ECHO) == 0:
-    start = time.time()
+while gpio.input(ECHO) == False:
+    sig_start = time.time()
 
-while gpio.input(ECHO) == 1:
-    end = time.time()
+while gpio.input(ECHO) == True:
+    sig_end = time.time()
 
-sig_time = end - start
+sig_time = sig_end - sig_start
 
 distance = sig_time / 0.000058
 
