@@ -1,5 +1,5 @@
 # PiBot
-PiBot is a project aiming to make an autonomous robot capable of self-driving without user commands. The autonomy comes from implementing object avoidance and lane detection. While the main focus of the project is the software behind the robot, one of the aims of the project is to learn more about electronics through the hardware side of the robot as well.
+PiBot is a project aiming to make an autonomous robot capable of self-driving without user commands. The autonomy comes from implementing object avoidance and lane detection. While the main focus of the project is the software behind the robot, one of the aims of the project is also to learn more about electronics through the hardware side of the robot.
 
 ## Parts
 Raspberry Pi 3 B+  
