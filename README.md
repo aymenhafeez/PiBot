@@ -1,5 +1,5 @@
 # PiBot
-PiBot is a project aiming to make an autonomous robot. A lot of the code could do with some cleaning up (for example, the plethora of if/elif statements), which I will hopefully do eventually, but currently I am just trying to get things to work.
+PiBot is a project aiming to make an autonomous robot. The aim is to make a robot able to drive by itself without user commands. The autonomy comes from implementing object avoidance and lane detection. While the main focus of the project is the software behind the robot, one of the aims of the project is to learn more about electronics through the hardware side of the robot.
 
 ## Parts
 Raspberry Pi 3 B+  
@@ -25,3 +25,4 @@ sudo apt-get install libopencv-dev
 sudo apt-get install libcv2.3
 sudo apt-get install opencv-doc
 ```
+A lot of credit goes to <a href="https://www.youtube.com/user/sentdex">Sentdex</a> and <a href="https://www.youtube.com/explainingcomputers">Explaining Computers</a> which helped get me started as I was starting the project.
