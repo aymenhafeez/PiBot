@@ -93,6 +93,9 @@ try:
         elif char == ord(' '):
             stop()
 
+controls = {ord('x'):break, ord('w'):forward(), 
+        }
+
 finally:
     curses.nocbreak()
     screen.keypad(0)
