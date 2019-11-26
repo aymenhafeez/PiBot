@@ -11,7 +11,7 @@ DC motors and wheels
 ## Dependencies
 
 ### RPi.GPIO
-This module allows control of the GPIO pins and should come pre-installed if you are using NOOBS or Raspbian on your Raspberry Pi. Otherwise, it can be installed with pip:
+This module allows control of the GPIO pins and should come pre-installed if you are using Raspbian on your Raspberry Pi. Otherwise, it can be installed with pip:
 ```shell
 sudo pip install RPi.GPIO
 ```
