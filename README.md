@@ -11,12 +11,12 @@ DC motors and wheels
 ## Dependencies
 
 ### RPi.GPIO
-This module allows control of the GPIO pins and should come pre-installed if you are using NOOBS or Raspbian on your Raspberry Pi. Otherwise, it can be installed with pip:
+This module allows control of the GPIO pins and should come pre-installed if you are using Raspbian on your Raspberry Pi. Otherwise, it can be installed with pip:
 ```shell
 sudo pip install RPi.GPIO
 ```
 ### Opencv
-Installing opencv on the Raspberry Pi can be a bit awkward and can take several hours as it requires building to install ALL of the relevant dependencies. <a href="https://hackaday.io/project/7008-fly-wars-a-hackers-solution-to-world-hunger/log/23068-installing-opencv-on-a-raspberry-pi-the-easy-way">This method</a> outlined by Michael Ratcliffe from Hackaday worked fine for me for use in this project, and is much less time consuming:
+Installing opencv on the Raspberry Pi can be a bit awkward and can take several hours to install all of the relevant dependencies. <a href="https://hackaday.io/project/7008-fly-wars-a-hackers-solution-to-world-hunger/log/23068-installing-opencv-on-a-raspberry-pi-the-easy-way">This method</a> outlined by Michael Ratcliffe from Hackaday worked fine for me for use in this project, and is much less time consuming:
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
