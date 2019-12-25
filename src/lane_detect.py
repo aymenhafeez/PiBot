@@ -13,6 +13,9 @@ gpio.setup(11, gpio.OUT)
 gpio.setup(13, gpio.OUT)
 gpio.setup(15, gpio.OUT)
 
+# TODO: Create seperate file with direction functions and import functions
+#       from there.
+
 theta = 0
 max_line_gap = 7.5
 min_line_length = 2.5

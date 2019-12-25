@@ -13,6 +13,9 @@ curses.noecho()
 curses.cbreak()
 screen.keypad(True)
 
+# TODO: Create seperate file with direction functions and import functions
+#       from there.
+
 
 def forward():
     gpio.output(7, True)

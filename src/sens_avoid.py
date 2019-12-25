@@ -9,6 +9,9 @@ gpio.setup(11, gpio.OUT)
 gpio.setup(13, gpio.OUT)
 gpio.setup(15, gpio.OUT)
 
+# TODO: Create seperate file with direction functions and import functions
+#       from there.
+
 
 def forward():
     gpio.output(7, True)
